@@ -8,11 +8,11 @@ console.log(mailUser);
 
 let autorizzato = mailUser.includes(mail);
 
-// se il suo nome non è all'interno della lista non può accedere
+// se il suo nome  è all'interno della lista può accedere
 
 if (autorizzato) {
     console.log("accesso riuscito");
-// se il suo nome è all'interno della lista può accedere
+// se il suo non è all'interno della lista non può accedere
 } else if (mail != mailUser) {
     console.log("accesso non riuscito");
 
