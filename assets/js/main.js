@@ -33,11 +33,11 @@ console.log(numeroCasuale2);
 if (numeroCasuale < numeroCasuale2) {
     console.log(" vinto il computer");
     //altrimenti se più piccolo
-} else if (numeroCasuale2 > numeroCasuale) {
-    console.log(" vinto il giocatore");
-    //in caso di pareggio 
+} else if (numeroCasuale > numeroCasuale2) {
+    console.log("vinto il giocatore");
+
 } else {
-    console.log("Pareggio");
+    console.log("pareggio");
 }
 
 
