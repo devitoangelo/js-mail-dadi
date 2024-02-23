@@ -14,8 +14,7 @@ stampa un messaggio appropriato sull’esito del controllo.
  # tools 
  - let prompt
  - Array
- - if/else
- - allert
+ - Ciclo
  - console.log
 
 

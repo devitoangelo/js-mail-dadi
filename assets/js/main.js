@@ -1,22 +1,43 @@
+
+
+//Lista partecipanti
+let list = [
+    "Mario@esempio.it",
+    "angelo@esempio.it",
+    "fabio@esempio.it",
+];
+
+
 // Chiedi all’utente la sua email
-let mail = prompt("Scrivi la tua mail")
-console.log(mail);
+let userEmail = prompt("Scrivi la tua mail")
 
 
-let mailUser = ["angelo", "angelo@esempio.it", "fabio@esempio.it"];
-console.log(mailUser);
 
-let autorizzato = mailUser.includes(mail);
+// Valore booleano
+let autorizzato = false;
 
-// se il suo nome  è all'interno della lista può accedere
+
+// Ciclo
+for (let i = 0; i < list.length; i++) {
+    const email = list[i];
+    console.log(email, userEmail, email === userEmail);
+
+    if (email === userEmail) {
+        autorizzato = true
+    }
+}
+
+
 
 if (autorizzato) {
-    console.log("accesso riuscito");
-// se il suo non è all'interno della lista non può accedere
-} else if (mail != mailUser) {
-    console.log("accesso non riuscito");
+    console.log("benvenuto", userEmail);
 
+
+}else {
+    console.log("Non autorizzato");
 }
+
+
 
 
 
